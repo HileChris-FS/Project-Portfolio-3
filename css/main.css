@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quintessential&display=swap');
 
+html {
+	font-size: 62.5%;
+}
 
+body {
+    font: 1.6rem/1.6 'Nunito', sans-serif;
+}
 
 /* Header ===============================================*/
-.navbar {
+a.nav-link {
     font-family: 'Quintessential', cursive;
+    font-size: 2.5rem;
+    margin: 1rem 2rem;
+}
+
+div.navbar-nav{
+    padding-left: 2rem;
 }
 
 .icon {
@@ -21,5 +33,51 @@
 
 .navbar-light .navbar-nav .nav-link.active{
     color: #137a7f;
+}
+
+/* Newsletter ===========================================*/
+
+.newsletter {
+    background: #137a7f;
+}
+
+h3 {
+    font-size: 4rem;
+    margin: 1rem 0 0 1rem;
+}
+
+input#mce-EMAIL.email {
+    background: #137a7f;
+    height: 3.4rem;
+    width: 35rem;
+    margin-bottom: 1rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
+  input#mc-embedded-subscribe.button {
+      background: white;
+      color: black;
+  }
+
+.icon2 {
+    font-size: 4rem;
+}
+
+/* Footer ===============================================*/
+.list-group-item {
+    border: none;
+    text-align: center;
 }
 
