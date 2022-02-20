@@ -177,3 +177,17 @@ input#mce-EMAIL.email {
     text-align: center;
 }
 
+/* Breadcrumbs ==========================================*/
+.breadcrumb-link {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb-link.active{
+    text-decoration: none;
+    color: #137a7f;
+}
+
+.breadcrumb-link:hover {
+    color: #137a7f;
+}

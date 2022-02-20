@@ -1,7 +1,7 @@
 {
     "posts":[
     {
-        "postid": "1",
+        "link": "happycamper.html",
         "title": "My journaling practice & Happy Camper PRINTABLES!",
         "by": "Chere Hile",
         "date": "February 18,2022",
@@ -10,7 +10,7 @@
         "category":"New Releases"
     },
     {
-        "postid": "2",
+        "link": "sweetvalentine.html",
         "title": "Sweet Valentine & a NL Hop",
         "by": "Chere Hile",
         "date": "February 10,2022",
@@ -19,7 +19,7 @@
         "category":"Freebies"
     },
     {
-        "postid": "3",
+        "link": "smitten.html",
         "title": "Smitten",
         "by": "Chere Hile",
         "date": "February 5,2022",

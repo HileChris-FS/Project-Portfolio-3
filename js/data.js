@@ -8,18 +8,10 @@ class Data {
         fetch("blog.json")
         .then((response) => response.json())
       .then((responseAsJson) => {
-        let data = responseAsJson;
-
-        let file = data.posts[0].post;
-        fetch(file)
-        .then(response => response.text()
-        .then(text => {let postDetail = text;
-            data.posts[0].post = postDetail;
-            this.view(data);
-        })
-        );
-      })
-
+        const data = responseAsJson;
+        
+        this.view(data);
+    })
       .catch((error) => {
         console.log("An Error Occurred:", error);
       });
@@ -27,20 +19,30 @@ class Data {
     }
 
     view(data){
+        
 
         data.posts.forEach(element => {
-            console.log(element);
+            
             const recent = document.querySelector("#recent");
             let recentPost = document.createElement("li");
             recent.append(recentPost);
         recentPost.innerHTML = `
-           <a class="postLink" href="blog.html"> ${element.title} </a>
+           <a class="postLink" href=${element.link}> ${element.title} </a>
            <br>
             ${element.date}
         `
         });
 
-        const post = document.querySelector(".post");
+        if (window.location.pathname == "/index.html") {
+    
+            let file = data.posts[0].post
+            fetch(file)
+            .then(response => response.text()
+            .then(text => {let postDetail = text;
+                data.posts[0].post = postDetail;
+
+
+            const post = document.querySelector(".post");
         let postData = document.createElement("secion");
         post.append(postData);
        
@@ -60,9 +62,46 @@ class Data {
                 </div>
             </div>
         `;
+    })
+    );
+        }
+        else {
 
+        data.posts.forEach(element => {     
         
-        
+            if (window.location.pathname == "/" + element.link) {
+
+                let file = element.post
+                fetch(file)
+                .then(response => response.text()
+                .then(text => {let postDetail = text;
+                    element.post = postDetail;
+
+                const post = document.querySelector(".post");
+                let postData = document.createElement("secion");
+                post.append(postData);
+               
+                postData.innerHTML = `
+                <button class="postCat rounded-pill">${element.category}</button>
+                <h3>${element.title}</h3>
+                    <div class="row">
+                        <div class="col-3">
+                            <h5>by: ${element.by}</h5>
+                            <h5>${element.date}</h5>
+                        </div>
+                        <div class="col-9">
+                            <img class="img-fluid" src="${element.image}" alt="Preview"></img>
+                            <article>
+                            <p>${element.post}</p>
+                            </article>
+                        </div>
+                    </div>
+                `;
+            })
+            );
+            }
+        });
+        }
 
     }
     
