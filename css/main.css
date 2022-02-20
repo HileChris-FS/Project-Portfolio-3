@@ -20,11 +20,12 @@ h3 {
 }
 
 h4 {
-    font: 2.5rem 'Quintessential', cursive;
+    font-size: 1.4rem;
+    margin-top: .5rem;
 }
 
 hr.mainline {
-    margin: 0 0 1rem 0;
+    margin: 0 0 3rem 0;
     width: 10rem;
     border-top: 1.2rem solid #137a7f;
     opacity: 1;
@@ -131,6 +132,11 @@ a.postLink {
     text-decoration: none;
 }
 
+aside h4 {
+    font: 2.5rem 'Quintessential', cursive;
+    
+}
+
 /* Newsletter ===========================================*/
 
 .newsletter {
@@ -145,7 +151,6 @@ a.postLink {
 input#mce-EMAIL.email {
     background: #137a7f;
     height: 3.3rem;
-    width: 35rem;
     margin-bottom: 1rem;
 }
 
@@ -191,3 +196,11 @@ input#mce-EMAIL.email {
 .breadcrumb-link:hover {
     color: #137a7f;
 }
+
+/* Buttons ============================================*/
+a.btn.btn-primary.rounded-pill {
+    background-color: #137a7f;
+    border: #137a7f;
+    width: 10rem;
+}
+

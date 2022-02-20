@@ -69,7 +69,7 @@ class Data {
 
         data.posts.forEach(element => {     
         
-            if (window.location.pathname == "/" + element.link) {
+            if (window.location.pathname == "/" + element.link || window.location.pathname == "/blog.html") {
 
                 let file = element.post
                 fetch(file)
