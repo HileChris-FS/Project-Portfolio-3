@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quintessential&display=swap');
 
+/* Typography =========================================*/
 html {
 	font-size: 62.5%;
 }
@@ -7,6 +8,35 @@ html {
 body {
     font: 1.6rem/1.6 'Nunito', sans-serif;
 }
+
+h2 {
+    font: 5rem 'Quintessential', cursive;
+    margin: 1rem 0 0 0;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+h4 {
+    font: 2.5rem 'Quintessential', cursive;
+}
+
+hr.mainline {
+    margin: 0 0 1rem 0;
+    width: 10rem;
+    border-top: 1.2rem solid #137a7f;
+    opacity: 1;
+}
+
+hr.aside {
+    margin: 0 0 1rem 0;
+    width: 5rem;
+    border-top: .5rem solid #137a7f;
+    opacity: 1;
+}
+
 
 /* Header ===============================================*/
 a.nav-link {
@@ -35,20 +65,86 @@ div.navbar-nav{
     color: #137a7f;
 }
 
+/* Carousel ============================================*/
+
+img.d-block.w-50 {
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+.carousel-indicators [data-bs-target]{
+    background: black;
+    border-top: .2rem;
+}
+
+.carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23137a7f'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23137a7f'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-indicators button {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 .5rem 2rem .5rem;
+    border-radius: 50%;
+}
+
+/* My Stores ============================================*/
+
+.main-store-list {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Post =================================================*/
+
+.postCat {
+    font-size: 1rem;
+    color: white;
+    border: none;
+    background: #137a7f;
+}
+
+p {
+    margin: 1rem 0 2rem 0;
+}
+
+li {
+    font-size: 1.4rem;
+}
+
+li::marker {
+    color: #137a7f;
+    font-size: 3rem;
+   
+}
+
+a.postLink {
+    color: #137a7f;
+    text-decoration: none;
+}
+
 /* Newsletter ===========================================*/
 
 .newsletter {
     background: #137a7f;
 }
 
-h3 {
+.newsletter h3 {
     font-size: 4rem;
     margin: 1rem 0 0 1rem;
 }
 
 input#mce-EMAIL.email {
     background: #137a7f;
-    height: 3.4rem;
+    height: 3.3rem;
     width: 35rem;
     margin-bottom: 1rem;
 }
