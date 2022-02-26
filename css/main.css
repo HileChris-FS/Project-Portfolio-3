@@ -51,7 +51,7 @@ div.navbar-nav{
 }
 
 .icon {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -141,6 +141,7 @@ aside h4 {
 
 .newsletter {
     background: #137a7f;
+    padding-bottom: 2rem;
 }
 
 .newsletter h3 {
@@ -176,10 +177,12 @@ input#mce-EMAIL.email {
     font-size: 4rem;
 }
 
+
 /* Footer ===============================================*/
 .list-group-item {
     border: none;
     text-align: center;
+    padding-top: 2rem;
 }
 
 /* Breadcrumbs ==========================================*/
@@ -202,5 +205,5 @@ a.btn.btn-primary.rounded-pill {
     background-color: #137a7f;
     border: #137a7f;
     width: 10rem;
+    padding: 1rem 0;
 }
-
